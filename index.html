@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect with Responsive Grid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="section section1">
+        <div class="text">PARALLAX</div>
+    </div>
+    
+    <div class="section section2">
+        <div class="container">
+            <div class="item">CARD 1</div>
+            <div class="item">CARD 2</div>
+            <div class="item">CARD 3</div>
+            <div class="item">CARD 4</div>
+            <div class="item">CARD 5</div>
+            <div class="item">CARD 6</div>
+        </div>
+        
+        <!-- Scroll to Section1 Button inside Section2 -->
+        <button id="scrollToSection1" class="scroll-button">&#x2191;</button>
+    </div>
+
+    <script>
+        // JavaScript to scroll to section1
+        document.getElementById('scrollToSection1').addEventListener('click', function() {
+            document.querySelector('.section1').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
